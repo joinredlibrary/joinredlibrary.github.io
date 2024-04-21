@@ -1,0 +1,136 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-color: #ffffffec;
+    color: #00000000;
+}
+
+/* Header styles */
+header {
+    background: linear-gradient(to right, #000033, #000099); /* Black-blue gradient */
+    padding: 3rem 0;
+    width: 100%;
+    height: 60vh; /* Set header height to 60% of viewport height */
+    text-align: center;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.sub-caption {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin-right: 1rem;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #a93226;
+}
+
+/* Main content styles */
+main {
+    padding: 2rem;
+}
+
+.section-content {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr)); /* Doubled the size of grid items */
+    gap: 3rem; /* Increased spacing between sections */
+}
+
+.section:nth-child(even) .grid-item-left {
+    grid-column: 2; /* Align left grid items to the right for even sections */
+}
+
+.section:nth-child(odd) .grid-item-right {
+    grid-column: 2; /* Align right grid items to the right for odd sections */
+}
+
+.text-box {
+    background-color: #222;
+    border-radius: 10px;
+    padding: 1rem;
+    margin-bottom: 1rem; /* Add vertical spacing between text and image */
+}
+
+.content {
+    text-align: right; /* Align paragraphs to the right */
+}
+
+h2 {
+    font-size: 2.5rem; /* Increase font size for section headings */
+    margin-bottom: 1rem;
+}
+
+p {
+    font-size: 1.25rem; /* Increase font size for paragraphs */
+    line-height: 1.8; /* Increase line height for readability */
+}
+
+/* Image styles */
+.image-container {
+    overflow: hidden;
+}
+
+.image-container img {
+    width: 100%;
+    transition: transform 0.3s ease;
+}
+
+.image-container:hover img {
+    transform: scale(1.1);
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+h2 {
+    color: #000;
+}
+
+p {
+    color:#ffffff
+}
